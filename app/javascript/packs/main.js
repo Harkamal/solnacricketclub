@@ -27,12 +27,10 @@
     
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 90) {
-            $('.nav-bar').addClass('nav-sticky');
-            $('.carousel, .page-header').css("margin-top", "73px");
+        if ($(this).scrollTop() > 0) {
+            $('.navbar').addClass('nav-sticky');
         } else {
-            $('.nav-bar').removeClass('nav-sticky');
-            $('.carousel, .page-header').css("margin-top", "0");
+            $('.navbar').removeClass('nav-sticky');
         }
     });
     
@@ -70,7 +68,59 @@
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ]
     });
+    
+    
+    // Modal Video
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.btn-play').click(function () {
+            $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
 
+        $('#videoModal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        })
+
+        $('#videoModal').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
+    });
+    
+    
+    // Causes carousel
+    $(".causes-carousel").owlCarousel({
+        autoplay: true,
+        animateIn: 'slideInDown',
+        animateOut: 'slideOutDown',
+        items: 1,
+        smartSpeed: 450,
+        dots: false,
+        loop: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+    
+    
+    // Causes progress
+    $('.causes-progress').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+    
     
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -83,7 +133,6 @@
     $(".testimonials-carousel").owlCarousel({
         center: true,
         autoplay: true,
-        smartSpeed: 2000,
         dots: true,
         loop: true,
         responsive: {
