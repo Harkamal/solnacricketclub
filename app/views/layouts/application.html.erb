@@ -25,6 +25,137 @@
   </head>
 
   <body>
+
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p>+467000000</p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p>info@solnaemail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <%= image_tag "logo.jpeg" %>    
+                <span>Solna Cricket Club</span></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu">
+                            <a href="#team" class="dropdown-item">Meet The Team</a>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
     <%= yield %>
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>More About us</h2>
+                        <p><i class="fa fa-map-marker-alt"></i>address here if any</p>
+                        <p><i class="fa fa-phone-alt"></i>+4670000000</p>
+                        <p><i class="fa fa-envelope"></i>info@solnaemail.com</p>
+                        <div class="footer-social">
+                            <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-custom" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Popular Links</h2>
+                        <a href="">About Us</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Useful Links</h2>
+                        <a href="">Terms of use</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <div class="footer-newsletter">
+                        <h2>Newsletter</h2>
+                        <form>
+                            <input class="form-control" placeholder="Email goes here">
+                            <button class="btn btn-custom">Submit</button>
+                            <label>Don't worry, we don't spam!</label>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="#">Solna Criket Club</a>, All Right Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Designed By: Harkamal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <%= javascript_pack_tag 'easing', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'owl_carousel', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'waypoints', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'counterup', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'parallax', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'jqBootstrapValidation', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'contact', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'main', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
