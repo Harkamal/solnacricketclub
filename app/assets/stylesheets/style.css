@@ -251,7 +251,7 @@ a:focus {
 .navbar .navbar-brand {
     margin: 0;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 0px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1070,6 +1070,7 @@ a:focus {
 .team .team-img {
     position: relative;
     overflow: hidden;
+    max-height: 242px;
 }
 
 .team .team-img img {
@@ -1089,7 +1090,7 @@ a:focus {
     height: 96px;
     bottom: 0;
     left: 20px;
-    padding: 22px 0;
+    padding: 20px 0;
     text-align: center;
     background: #ffffff;
     transition: .3s;
