@@ -1,0 +1,36 @@
+<div class="contact" id="contact">
+    <div class="container">
+        <%= form_with url: "/contact", local: false,  id: "contactForm", novalidate: "novalidate", method: :post do |form| %>
+            <div class="section-header text-center">
+                <p>Get In Touch</p>
+                <h2>Contact for any query</h2>
+            </div>
+            <div class="contact-img">
+                <%= image_tag "contact.jpeg" %>
+            </div>
+        
+            <div class="contact-form">
+                <div id="success"></div>
+                <div class="control-group">
+                    <%= form.text_field :name, class: 'form-control', id: 'name', placeholder: 'Your Name', required: true%>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <%= form.email_field :email, class: 'form-control', id: 'email', placeholder: 'Your Email', required: true%>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <%= form.text_field :subject, class: 'form-control', id: 'subject', placeholder: 'Subject', required: true%>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <%= form.text_area :message, class: 'form-control', id: 'message', placeholder: 'message'%>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div>
+                    <%= form.submit "Send Message", class: 'btn btn-custom', id: 'sendMessageButton' %>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
