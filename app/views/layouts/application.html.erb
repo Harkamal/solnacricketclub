@@ -34,11 +34,11 @@
                     <div class="top-bar-left">
                         <div class="text">
                             <i class="fa fa-phone-alt"></i>
-                            <p>+467000000</p>
+                            <p><%= contact_us_phone_number %></p>
                         </div>
                         <div class="text">
                             <i class="fa fa-envelope"></i>
-                            <p>info@solnaemail.com</p>
+                            <p><%= contact_us_email %></p>
                         </div>
                     </div>
                 </div>
@@ -73,6 +73,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu">
                             <a href="#team" class="dropdown-item">Meet The Team</a>
+                            <a href="#teamPhotos" class="dropdown-item">Moments - 2021</a>
                         </div>
                     </div>
                     <a href="#contact" class="nav-item nav-link">Contact</a>
@@ -91,8 +92,8 @@
                     <div class="footer-contact">
                         <h2>More About us</h2>
                         <p><i class="fa fa-map-marker-alt"></i>address here if any</p>
-                        <p><i class="fa fa-phone-alt"></i>+4670000000</p>
-                        <p><i class="fa fa-envelope"></i>info@solnaemail.com</p>
+                        <p><i class="fa fa-phone-alt"></i><%= contact_us_phone_number %></p>
+                        <p><i class="fa fa-envelope"></i><%= contact_us_email %></p>
                         <div class="footer-social">
                             <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-custom" href=""><i class="fab fa-instagram"></i></a>
