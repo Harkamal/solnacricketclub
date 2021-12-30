@@ -1,0 +1,187 @@
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                <%= image_tag "carousel-1.jpeg" %>    
+                </div>
+                <div class="carousel-text">
+                    <h1>Solna Cricket Club - A Dream Team</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
+                    </p>
+                    <!-- <div class="carousel-btn">
+                        <a class="btn btn-custom" href="">Donate Now</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+ 		    <%= image_tag "carousel-2.jpeg" %>
+                </div>
+                <div class="carousel-text">
+                    <h1>Get Involved & Lead to Victory</h1>
+                    <p>
+                        Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
+                    </p>
+                    <!-- <div class="carousel-btn">
+                        <a class="btn btn-custom" href="">Donate Now</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+		 <%= image_tag "carousel-3.jpeg" %>
+                </div>
+                <div class="carousel-text">
+                    <h1>Failures are learnings</h1>
+                    <p>
+                        Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
+                    </p>
+                    <!-- <div class="carousel-btn">
+                        <a class="btn btn-custom" href="">Donate Now</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Video Modal Start-->
+<!-- <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>         -->
+                <!-- 16:9 aspect ratio -->
+                <!-- <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  -->
+<!-- Video Modal End -->
+
+
+<!-- About Start -->
+<div class="about" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll" data-image-src="assets/about.jpeg"></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>Know More About Us</p>
+                    <!-- <h2>some description</h2> -->
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-3">Join Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            <p>Solna Cricket Club (formerly Karolinska Cricket Club) was founded in 2012 by a group of cricket enthusiasts from Stockholm, with a humble aim to train together and participate in various competitive leagues under Svenska Cricketforbundet (SCF).</p>
+
+                            <p>Back then, this gentleman’s game had barely entered the Swedish arena. Over the years, Cricket has taken giant strides in terms of gaining popularity and infrastructure building across Sweden.</p>
+
+                            <p>We have been fortunate to ride this wave with the spirited participation from the past and present members of our club whose passion and dedication for the game are second to none. This reflected well on our on-field success which includes reaching the semifinals of the Swedish Men’s league (division 2 and 3) for three consecutive years (2016-18) and qualifying for the Superreten in 2021. </p>
+                        </div>
+                        <div id="tab-content-2" class="container tab-pane fade">
+                            <p>Our goal is not only to remain competitive and win tournaments in SCF men’s league but also to grow our club further through regular recruitment of new players and by providing them a safe, friendly, and cooperative environment to improve their game.</p>
+
+                            <p>Ultimately, our overarching aim is to promote cricket in Sweden and create a platform for bringing people from different cultural backgrounds who share a common love for this beautiful game.</p>
+                        </div>
+                        <div id="tab-content-3" class="container tab-pane fade">
+                            Please drop a mail to <b><%= contact_us_email %></b> or call us at <b><%= contact_us_phone_number %></b> for your inquiries, and will get back to you as soon as possible.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Event Start -->
+<div class="event">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Upcoming Matches</p>
+            <h2>Be ready for our upcoming matches</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="event-item">
+                 <%= image_tag "event-1.jpg" %>  
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <p><i class="fa fa-calendar-alt"></i>22-April-2022</p>
+                            <p><i class="far fa-clock"></i>10:00 - 14:00</p>
+                            <p><i class="fa fa-map-marker-alt"></i>Husby</p>
+                        </div>
+                        <div class="event-text">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                            </p>
+                            <a class="btn btn-custom" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="event-item">
+                    <%= image_tag "event-2.png" %>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <p><i class="fa fa-calendar-alt"></i>28-April-2022</p>
+                            <p><i class="far fa-clock"></i>10:00 - 14:00</p>
+                            <p><i class="fa fa-map-marker-alt"></i>Norsborg</p>
+                        </div>
+                        <div class="event-text">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                            </p>
+                            <a class="btn btn-custom" href="">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Event End -->
+
+
+<!-- Team Start -->
+<%= render partial: "team_members" %>
+<%= render partial: "team_photos" %>
+
+<!-- Team End -->
+
+<!-- Team Start -->
+<%#= render partial: "progress_per_year" %>
+<!-- Team End -->
+
+<!-- Contact Start -->
+<%= render partial: "contact_form" %>
+<!-- Contact End -->
