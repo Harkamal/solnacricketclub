@@ -251,9 +251,9 @@ a:focus {
 .navbar .navbar-brand {
     margin: 0;
     color: #ffffff;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 0px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -266,7 +266,7 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    padding: 10px 15px 8px 15px;
+    padding: 11px ​8px 8px 8p;
     color: #ffffff;
 }
 
@@ -307,7 +307,7 @@ a:focus {
     .navbar a.nav-link {
         padding: 8px 15px;
         font-size: 16px;
-        letter-spacing: 1px;
+        /* letter-spacing: 1px; */
     }
 }
 
@@ -380,7 +380,7 @@ a:focus {
 
 .carousel .carousel-text {
     position: absolute;
-    max-width: 700px;
+    /* max-width: 700px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -391,9 +391,9 @@ a:focus {
 .carousel .carousel-text h1 {
     text-align: center;
     color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 60%;
 }
 
 .carousel .carousel-text p {
@@ -659,13 +659,13 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 45px 0 15px 0;
 }
 
-.about .section-header {
+/* .about .section-header {
     margin-bottom: 30px;
     margin-left: 0;
-}
+} */
 
 .about .about-img {
     width: 100%;
@@ -770,7 +770,7 @@ a:focus {
     margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .service .service-text p {
@@ -2026,7 +2026,7 @@ a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    padding-top: 90px;
+    /* padding-top: 90px; */
     background: #20212B;
 }
 
@@ -2064,7 +2064,7 @@ a:focus {
 
 .footer .footer-link a:hover {
     color: #FDBE33;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .footer .footer-contact p i {
@@ -2102,7 +2102,7 @@ a:focus {
     margin-top: 5px;
     color: #777777;
     font-size: 14px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
 .footer .footer-newsletter .btn.btn-custom {
@@ -2115,8 +2115,9 @@ a:focus {
 }
 
 .footer .copyright .row {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
@@ -2126,7 +2127,7 @@ a:focus {
 }
 
 .footer .copyright .col-md-6:last-child p {
-    text-align: right;
+    /* text-align: right; */
 }
 
 .footer .copyright p a {
@@ -2137,6 +2138,10 @@ a:focus {
     color: #FDBE33;
 }
 
+.photos {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 @media (max-width: 767.98px) {
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
