@@ -616,7 +616,7 @@ a:focus {
     position: relative;
     width: 100%;
     max-width: 700px;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 12px auto;
 }
 
 .section-header p {
@@ -659,7 +659,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 0px 0px 0px 0px;
 }
 
 /* .about .section-header {
@@ -703,7 +703,7 @@ a:focus {
 
 @media (max-width: 991.98px) {
     .about .section-header {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
