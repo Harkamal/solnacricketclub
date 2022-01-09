@@ -497,7 +497,7 @@ a:focus {
 
 @media (max-width: 767.98px) {
     .carousel .carousel-text h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
     
     .carousel .carousel-text .btn {
@@ -509,7 +509,7 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .carousel .carousel-text h1 {
-        font-size: 25px;
+        font-size: 18px;
     }
     
     .carousel .carousel-text .btn {
@@ -683,6 +683,7 @@ a:focus {
     border-radius: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     transition: none;
+    font-size: 15px;
 }
 
 .about .about-tab .nav.nav-pills .nav-link:hover,
