@@ -1071,7 +1071,8 @@ a:focus {
 .team .team-img {
     position: relative;
     overflow: hidden;
-    max-height: 242px;
+    max-height: 275px;
+    border: 1px solid;
 }
 
 .team .team-img img {
@@ -1088,10 +1089,10 @@ a:focus {
 .team .team-text {
     position: absolute;
     width: calc(100% - 40px);
-    height: 96px;
+    height: 27px;
     bottom: 0;
     left: 20px;
-    padding: 20px 0;
+    padding: 5px 0;
     text-align: center;
     background: #ffffff;
     transition: .3s;
@@ -1099,13 +1100,13 @@ a:focus {
 }
 
 .team .team-text h2 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .team .team-text p {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .team .team-social {
@@ -1132,7 +1133,7 @@ a:focus {
 }
 
 .team .team-item:hover .team-text {
-    height: 160px;
+    height: 100px;
 }
 
 
