@@ -1054,6 +1054,18 @@ a:focus {
 }
 
 
+.inline-image {
+    display: inline-flex;
+    align-items: center;
+}
+
+.inline-image img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
@@ -1071,8 +1083,9 @@ a:focus {
 .team .team-img {
     position: relative;
     overflow: hidden;
-    height: 320px;
+    /* height: 320px; */
     border: 1px solid;
+    border-color: whitesmoke;
 }
 
 .team .team-img img {
